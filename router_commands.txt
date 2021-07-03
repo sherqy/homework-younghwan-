@@ -50,3 +50,12 @@ ip default-gateway ~(gateway ip address)
 여러 명령어
 ->	exec-timeout ~(minutes) ~(seconds)
 
+활성화 설정(shutdown setting)
+활성화시키고자 하는 인터페이스에 접근
+->	1. interface serial0
+	2. no shutdown(활성화)
+
+이외에도 엄청 많은 명령어들이 있는데 네트워크 관리사 대비용으로는 이 정도면 충분할 듯 하다.
+ccna나 나중에 1급 준비할 때 더 추가하도록 하겠다.
+Besides, there are a number of commands about router. I think its enough to ready for network license.
+In other times, when preparing ccna or 1st grade, i'll add more commands or informations.
