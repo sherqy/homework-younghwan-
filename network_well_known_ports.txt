@@ -1,0 +1,28 @@
+well-known ports
+
+0		UDP	예약됨; 사용하지 않음	공식
+1	TCP		TCPMUX (TCP 포트 서비스 멀티플렉서)	공식
+
+19	TCP	UDP	CHARGEN (Character Generator) 프로토콜 - 원격 오류 수정	공식
+20	TCP		파일 전송 프로토콜 (FTP, File Transfer Protocol) - 데이터 포트	공식
+21	TCP		파일 전송 프로토콜 (FTP, File Transfer Protocol) - 제어 포트	공식
+22	TCP		시큐어 셸 (SSH, Secure SHell) - ssh scp, sftp같은 프로토콜 및 포트 포워딩	공식
+23	TCP		텔넷 프로토콜 (Telnet Protocol) - 암호화되지 않은 텍스트 통신	공식
+
+25	TCP		SMTP	공식
+
+53	TCP	UDP	도메인 네임 시스템 (DNS, Domain Name System)	공식
+
+69		UDP	간단한 파일 전송 프로토콜 (TFTP, Trivial File Transfer Protocol)	공식
+
+80	TCP	UDP	HTTP (HyperText Transfer Protocol) - 웹 페이지 전송	공식
+
+109	TCP		POP2 (Post Office Protocol version 2) - 전자우편 가져오기에 사용	공식
+110	TCP		POP3 (Post Office Protocol version 3) - 전자우편 가져오기에 사용	공식
+
+161		UDP	SNMP (Simple Network Management Protocol) - Agent 포트	공식
+162		UDP	SNMP - Manager 포트	공식
+
+220	TCP		인터넷 메시지 접속 프로토콜 3 (IMAP3, Internet Message Access Protocol 3)	
+
+443	TCP		HTTPS - 보안 소켓 레이어 (SSL, Secure Socket Layer) 위의 HTTP (암호화 전송)	공식
