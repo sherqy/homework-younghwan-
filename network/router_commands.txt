@@ -1,0 +1,61 @@
+router commands
+
+1. 기본 명령어들(basic commands not fixing any settings)
+관리자 모드 진입(enter administrator mode) : enable(en)
+
+터미널 설정 진입(enter terminal configuration) : config terminal(conf t)
+
+진입한 단계에서 빠져 나오기(exit entering level) : exit
+
+저장(save) : copy running-config startup-config(copy r s)
+
+2. 확인 / 설정 명령어들(checking / setting commands)
+인터페이스 정보 확인(look interface information) : show interface
+
+접속한 사용자 확인(look entering users) : show user
+
+라우팅 테이블 확인(look routing table) : show ip route
+
+플래쉬 확인(check flash) : show flash
+
+이더넷 접속 후 ip 주소 설정(after entering ethernet, set ip address)
+->	1. interface fastethernet 0/0
+	2. ip address 000.000.000.000(ip) 000.000.000.000(subnet mask)
+
+대역폭 설정(set bandwidth) ( ex) set bandwidth of serial 0 ~)
+->	1. interface serial 0
+	2. bandwidth ~
+	
+주석 설정(description setting)
+->	1. interface fastethernet0/0
+	2. description ~(약자 des)
+	
+secondary 설정
+->	1. interface fastethernet0/0
+	2. ip address 000.000.000.000(ip) 000.000.000.000(subnet mask) secondary
+	
+디폴트 게이트웨이 설정(default gateway setting)
+ip default-gateway ~(gateway ip address)
+
+텔넷 설정
+텔넷 인터페이스 접근(access telnet interface)
+-> line vty 0 4
+여러 명령어
+->	1. password 설정 : password ~
+	2. login 사용여부 변경 : login
+	
+콘솔 설정
+콘솔 인터페이스 접근(access console interface)
+-> line console 0
+여러 명령어
+->	exec-timeout ~(minutes) ~(seconds)
+
+활성화 설정(shutdown setting)
+활성화시키고자 하는 인터페이스에 접근
+->	1. interface serial0
+	2. no shutdown(활성화)
+
+이외에도 엄청 많은 명령어들이 있는데 네트워크 관리사 대비용으로는 이 정도면 충분할 듯 하다.
+ccna나 나중에 1급 준비할 때 더 추가하도록 하겠다.
+Besides, there are a number of commands about router. I think its enough to ready for network license.
+In other times, when preparing ccna or 1st grade, i'll add more commands or informations.
